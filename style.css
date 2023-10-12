@@ -478,18 +478,13 @@ section.section__service {
 /* ------------About------------- */
 
 .about__section {
-    height: 2078px;
+    height: 900px;
     background: rgba(156, 154, 254, 0.10);
 }
 
 .about__section__title__some {
     height: 376px;
     background: #615EE4;
-}
-
-.pattrens {
-    display: flex;
-
 }
 
 .about__section__title h1{
@@ -527,4 +522,272 @@ section.section__service {
     display: flex;
     justify-content: center;
 }
+
+/* -----------section some------------ */
+
+.pattrens {
+    display: flex;
+
+}
  
+.some__counter h2{
+    color:#FFF;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 64px;
+    letter-spacing: 0.24px;
+}
+
+.some__counter p{
+    color:#FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+    letter-spacing: 0.5px;
+}
+
+.some__counter {
+    margin-top: -360px;
+}
+
+.count__clients {
+    color:#FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+.count__taken__business h3{
+    color:#FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+}
+.count__years__of__journey h3{
+    color:#FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+.count__clients p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.054px;
+}
+
+.count__taken__business P{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.054px;
+
+}
+
+.count__years__of__journey p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.054px;
+}
+.counters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.counters {
+    margin-top: 80px;
+}
+
+.count__taken__business {
+    border-left: solid #FFF;
+    border-right: solid #FFF;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*------------section clients -------------*/
+
+/* ==========User One========== */
+
+.description__user__one {
+    width: 540px;
+    height: 231.997px;
+    fill:#FFF;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.description__user__one h1{
+    color:#151617;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+}
+
+.description__user__one p{
+    color: #4F4F4F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
+}
+
+.description__user__one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__clients {
+    height: 500px;
+    background: rgba(156, 154, 254, 0.10);
+}
+
+.section__clients {
+    display: flex;
+    justify-content: center;
+}
+
+.profail__user__name__one h2{
+    color: #615EE4;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+
+}
+
+.profail__user__name__one p{
+    color: #4F4F4F;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.profail__user__one {
+    display: flex;
+    gap: 8px;
+}
+
+.comment__user__one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+}
+
+/* ==========User Two========== */
+
+
+.description__user__two {
+    width: 540px;
+    height: 231.997px;
+    fill:#FFF;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.description__user__two h1{
+    color:#151617;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+}
+
+.description__user__two p{
+    color: #4F4F4F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
+}
+
+.description__user__two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profail__user__two__name h2{
+    color: #615EE4;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+
+}
+
+.profail__user__two__name p{
+    color: #4F4F4F;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.profail__user__two {
+    display: flex;
+    gap: 8px;
+}
+
+.comment__user__two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+}
