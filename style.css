@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
     /* border: 1px solid red !important; */
 }
+
+header.header, .contact__section, section.info_section, footer.footer, section.about__section, section.about__section__title__some section.section__service, section.hero_section {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .header{
     display: flex;
     justify-content: center;
@@ -66,7 +78,7 @@
 }
 .nav-link{
     text-decoration: none;
-    color: #615EE4;
+    color: #615EE4; 
 }
 
 .nav-item_icon {
@@ -124,7 +136,7 @@
 .button_contact{
     width: 170px;
     height: 50px;
-    border-radius: 40px;
+    border-radius: 18px;
     border: #979797;
     background: #615EE4;
 }
@@ -135,7 +147,7 @@
     font-family: Plus Jakarta Sans;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 140.5%;
     letter-spacing: 1.36px;
     text-decoration: none;
@@ -175,7 +187,7 @@
 } 
 
 .hero_section{
-    margin-bottom: 190px;
+    height: 960px;
 }
 .box .box_name h2{
     color: #33475B;
@@ -387,8 +399,8 @@ section.section__service {
 
 .service__box01, .service__box02, .service__box03 {
     display: flex;
-    width: 230px;
-    height: 260px;
+    width: 256px;
+    height: 312px;
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
@@ -401,7 +413,7 @@ section.section__service {
 }
 
 .service__box01__icon, .service__box02__icon, .service__box03__icon {
-    margin-left: 80px;
+    margin-left: 72px;
 }
 
 .service__box01__info h3{
@@ -637,13 +649,43 @@ section.section__service {
 
 /*------------section clients -------------*/
 
+.section__clients {
+    height: 490px;
+    background: rgba(156, 154, 254, 0.10);
+}
+
+.section__clients__users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section__clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.title__clients__test {
+    color: #615EE4;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: 0.03125rem;
+}
+
 /* ==========User One========== */
 
 .description__user__one {
     width: 540px;
     height: 231.997px;
     fill:#FFF;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(58, 42, 150, 0.15) 0px 48px 100px 0px;
     border-radius: 20px;
     display: flex;
 }
@@ -674,16 +716,6 @@ section.section__service {
 .description__user__one {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.section__clients {
-    height: 500px;
-    background: rgba(156, 154, 254, 0.10);
-}
-
-.section__clients {
-    display: flex;
     justify-content: center;
 }
 
@@ -719,6 +751,14 @@ section.section__service {
 
 }
 
+.polygon {
+    clip-path: polygon(100% 0, 0 0, 50% 63%);
+    background-color: #ffffffc5;
+    width: 32px;
+    height: 27px;
+    margin-top: -12.3px;
+}
+
 /* ==========User Two========== */
 
 
@@ -726,7 +766,7 @@ section.section__service {
     width: 540px;
     height: 231.997px;
     fill:#FFF;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(58, 42, 150, 0.15) 0px 48px 100px 0px;
     border-radius: 20px;
     display: flex;
 }
@@ -790,4 +830,101 @@ section.section__service {
     align-items: center;
     gap: 12px;
 
+}
+
+/* -----------Contact Section----------- */
+
+.contact__section {
+    height: 45.9375rem;
+    background-color: #9C9AFE1A;
+}
+
+.contact__section__title {
+    color: #615EE4;
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    padding: 150px 100px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+    position: relative;
+}
+
+.contact__section__box01 h1{
+    color:#2D2F30;
+    font-family: Playfair Display;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; 
+    letter-spacing: 0.03125rem;
+    margin-top: -20px;
+
+}
+
+.contact__section__box01 p{
+    color: #4F4F4F;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem; 
+    letter-spacing: 0.03125rem;
+    margin-top: 16px;
+}
+
+.googlemap {
+    width: 31rem;
+    height: 17rem;
+    border-radius: 2.1875rem;
+    border: 5px solid #2621E6;
+}
+
+.contact__section__box01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__section__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 65px;
+
+}
+
+.call__button {
+    width: 170px;
+    height: 50px;
+    border-radius: 18px;
+    border: #979797;
+    background: #615EE4;
+    margin-top: 15px;
+}
+
+.call__now {
+    width: 125px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140.5%;
+    letter-spacing: 1.36px;
+    text-decoration: none;
 }
