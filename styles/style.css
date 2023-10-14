@@ -66,6 +66,11 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     text-decoration: underline
 }
 
+.active a:active{
+    color: #615EE4;
+    text-decoration: underline
+}
+
 .nav-item {
     list-style: none;
     color: #615EE4;
@@ -99,21 +104,21 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
 
 }
 
-.hero_section .box_left h1{
+.hero_section .box_left h1 {
     color: #615EE4;
     font-family: Playfair Display;
-    font-size: 80px;
+    font-size: 84px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 120%;
-    letter-spacing: 1.8px;
-    margin-top: 80px;
+    letter-spacing: 2.8px;
+    margin-top: 32px;
 }
 
 .hero_section .box_left p{
     width: 115%;
     display: flex;
-    color: #979797;
+    color: #2D2F30;
     font-family: Plus Jakarta Sans;
     font-size: 20px;
     font-style: normal;
@@ -200,7 +205,7 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     position: absolute;
     border-radius: 15px;
     background: #ffffff;
-    box-shadow: -3px 4px 90px rgba(0, 0, 0, 0.13);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: -51px 200px;
 } 
 
@@ -219,7 +224,7 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
 }
 
 .box .box_name p{
-    color: #87898C;
+    color: #2D2F30;
     text-align: center;
     font-family: Plus Jakarta Sans;
     font-size: 16px;
@@ -278,20 +283,21 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
 
 .element_product_title, .element_support_title, .element_company_title {
     color: #ffea00;
-    font-family: Inter;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 30px;
 }
 
 .element_product, .element_company, .element_support{
     color: #FFF;
-    font-family: Inter;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    letter-spacing: 0.6px;
 
 }
 
@@ -322,8 +328,8 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
 
 .footer__bottom__copy p{
     color: #615EE4;
-    font-family: Inter;
-    font-size: 19px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
@@ -361,7 +367,7 @@ section.section__service {
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.5px;
-    padding: 150px 100px;
+    padding: 90px;
     display: flex;
     justify-content: center;
     text-decoration: underline;
@@ -371,7 +377,7 @@ section.section__service {
 }
 
 .service__box__left h2{
-    width: 50%;
+    width: 79%;
     color: #615EE4;
     font-family: Playfair Display;
     font-size: 48px;
@@ -383,7 +389,7 @@ section.section__service {
 }
 
 .service__box__left p{
-    width: 45%;
+    width: 76%;
     color:#4F4F4F;
     font-family: Poppins;
     font-size: 20px;
@@ -398,6 +404,7 @@ section.section__service {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    width: 40%;
 
 }
 
@@ -536,11 +543,12 @@ section.section__service {
     color: #615EE4;
     font-family: Playfair Display;
     font-size: 60px;
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.5px;
-    padding: 150px 100px;
+    padding: 100px 100px;
     display: flex;
     justify-content: center;
     text-decoration: underline;
@@ -550,6 +558,7 @@ section.section__service {
 }
 
 .about__section__title p{
+    width: 90%;
     color:#4F4F4F;
     font-family: Poppins;
     font-size: 19px;
@@ -557,11 +566,16 @@ section.section__service {
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0.5px;
-    display: flex;
-    justify-content: center;
     margin-top: -80px;
+    display: inline;
 }
 
+.about__section__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .about__section__img {
     height: 500px;
     display: flex;
@@ -764,7 +778,7 @@ section.section__service {
 
 .profail__user__name__one p{
     color: #4F4F4F;
-    font-family: Inter;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -845,7 +859,7 @@ section.section__service {
 
 .profail__user__two__name p{
     color: #4F4F4F;
-    font-family: Inter;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
