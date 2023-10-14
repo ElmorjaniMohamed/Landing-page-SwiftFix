@@ -12,7 +12,7 @@
     /* border: 1px solid red !important; */
 }
 
-header.header, .contact__section, section.info_section, footer.footer, section.about__section, section.about__section__title__some section.section__service, section.hero_section {
+header.header, .contact__section, div.info_section, footer.footer, section.about__section, section.about__section__title__some section.section__service, section.hero_section {
     width: 100%;
     margin: 0 auto;
 }
@@ -144,10 +144,8 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     width: 170px;
     height: 55px;
     border-radius: 18px;
-    border: #979797;
     background: #615EE4;
     color: #F9F8F9;
-    margin-top: 15px;
     font-family: Plus Jakarta Sans;
     font-size: 18px;
     font-style: normal;
@@ -156,17 +154,18 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     letter-spacing: 1.36px;
     text-decoration: none;
     cursor: pointer;
+    padding: 12px 12px 12px 28px;
 }
 
 .button_contact:hover {
     background-color: #615EE4;
     color: #fff;
-    transform: scale(0.5.0.5);
+    transform: scale(1.1);
     box-shadow: 0 0 10px #615EE4;
 
 }
 
-.text_button{
+.text_button {
     width: 125px;
     color: #FFF;
     font-family: Plus Jakarta Sans;
@@ -210,7 +209,7 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
 } 
 
 .hero_section{
-    height: 935px;
+    height: 905px;
 }
 .box .box_name h2{
     color: #33475B;
@@ -220,7 +219,7 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
-    margin-top: 12px;
+    margin-bottom: -5px;
 }
 
 .box .box_name p{
@@ -231,8 +230,11 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
+    margin-bottom: 12px;
 }
-
+.box_name {
+    padding: 12px 12px;
+}
 .info_section {
     height: 400.157px;
     background: linear-gradient(270deg, #615EE4 1.59%, #2621E6 99.7%);
@@ -321,7 +323,7 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 383.877pxpx;
+    height: 383.877px;
     color: #ffffff;
 
 }
@@ -347,16 +349,11 @@ header.header, .contact__section, section.info_section, footer.footer, section.a
     margin-right: 120px;
 }
 
------------Service Page-------------
+/* -----------Service Page------------ */
 
 .section__service {
-    height: 1135px;
+    height: 1034px;
     background: rgba(156, 154, 254, 0.10);
-    margin-bottom: 55px;
-}
-
-section.section__service {
-    margin-bottom: 55px;
 }
 
 .section__service__title h1{
@@ -433,7 +430,7 @@ section.section__service {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 120px;
 
 }
 
@@ -971,13 +968,14 @@ section.section__service {
     letter-spacing: 1.36px;
     text-decoration: none;
     cursor: pointer;
+    padding: 12px 12px 12px 43px;
 
 }
 
 .call__button:hover {
     background-color: #00c911;
     color: #fff;
-    transform: scale(0.5.0.5);
+    transform: scale(1.1);
     box-shadow: 0 0 10px #00c911;
 }
 
@@ -1075,12 +1073,13 @@ section.section__service {
     letter-spacing: 1.36px;
     text-decoration: none;
     cursor: pointer;
+    padding: 9px 12px 12px 45px;
 }
 
 .send__your__message:hover {
     background-color: #615EE4;
     color: #fff;
-    transform: scale(0.5.0.5);
+    transform: scale(1.1);
     box-shadow: 0 0 10px #615EE4;
 }
 
