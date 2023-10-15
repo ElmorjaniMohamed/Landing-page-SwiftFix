@@ -26,7 +26,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     position: fixed;
     top: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     z-index: 50;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -56,19 +56,14 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     transition: color 0.3s ease;
 }
 
+
 .nav-item a:hover{
     color: #615EE4;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
-.nav-item a:focus{
+.active a{
     color: #615EE4;
-    text-decoration: underline
-}
-
-.active a:active{
-    color: #615EE4;
-    text-decoration: underline
 }
 
 .nav-item {
@@ -349,6 +344,12 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     margin-right: 120px;
 }
 
+.footer__links__product__list, .footer__links__company__list, .footer__links__support__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 /* -----------Service Page------------ */
 
 .section__service {
@@ -447,6 +448,20 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     border: 4px solid #615EE4;
     background: #FCFCFC;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: 0.5s ease;
+}
+
+.service__box01:hover {
+    transform: scale(1.1);
+    
+}
+
+.service__box02:hover{
+    transform: scale(1.1);
+}
+
+.service__box03:hover{
+    transform: scale(1.1);
 }
 
 .service__box01__icon, .service__box02__icon, .service__box03__icon {
@@ -792,7 +807,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     flex-direction: column;
     align-items: center;
     gap: 12px;
-
+    transition: 0.5s ease;
 }
 
 .polygon {
@@ -873,7 +888,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     flex-direction: column;
     align-items: center;
     gap: 12px;
-
+    transition: 0.3s ease;
 }
 
 /* -----------Contact Section----------- */
