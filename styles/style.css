@@ -191,10 +191,10 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     top: 120px;
 }
 
-.img__repair__main {
+/* .img__repair__main {
     width: 49.6875rem;
     height: 54.23819rem;
-}
+} */
 
 .box{
     width: 382px;
@@ -1000,7 +1000,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 }
 
 .contact__forms {
-    height: 28.375rem;
+    height: 29.375rem;
     background: rgba(156, 154, 254, 0.10);
 }
 
@@ -1013,12 +1013,13 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     line-height: 4rem;
     letter-spacing: 0.01219rem;
     display: flex;
-    justify-content: start;
-    margin-left: 181px;
 }
 .contact__forms__title h1 {
     font-size: 23px;
-    margin: -5px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
 }
 
 .contact__forms__info__modifier {
