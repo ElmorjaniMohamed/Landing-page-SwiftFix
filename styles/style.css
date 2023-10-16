@@ -191,6 +191,11 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     top: 120px;
 }
 
+.img__repair__main {
+    width: 49.6875rem;
+    height: 54.23819rem;
+}
+
 .box{
     width: 382px;
     height: 100px;
