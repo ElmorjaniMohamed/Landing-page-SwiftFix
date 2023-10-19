@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 
+:root{
+    font-size: 10px;
+}
+
+.layout-padding{
+    padding: 1rem 3rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,133 +20,256 @@
     /* border: 1px solid red !important; */
 }
 
-header.header, .contact__section, div.info_section, footer.footer, section.about__section, section.about__section__title__some section.section__service, section.hero_section {
+body {
+    margin: 0;
+    background: rgba(156, 154, 254, 0.10);
+}
+
+/* Header */
+
+/* header.header,
+.contact__section,
+div.info_section,
+footer.footer,
+section.about__section,
+section.about__section__title__some section.section__service{
     width: 100%;
     margin: 0 auto;
+} */
+
+
+
+
+header a {
+    text-decoration: none;
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
+header {
+    padding: 0 3rem;
     background-color: #ffffff;
+    height: 8rem;
     position: fixed;
     top: 0;
-    right: 0;
-    width: 100%;
-    height: 80px;
+    width: 100vw;
     z-index: 50;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header__container__navbar__menu {
+header + section{
+    margin-top: 8rem;
+}
+
+#brand {
     display: flex;
-    justify-content:center;
     align-items: center;
-    gap: 315px;
 }
 
-.header__container__navbar__menu_navbar__brand {
-    width: 144px;
-    height: 36px;
-}
-
-.navbar-nav {
+.nav-bar ul {
+    list-style: none;
+    height: 100%;
     display: flex;
-    gap: 4rem;
-
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 36rem;
 }
 
-.navbar-nav a{
-    text-decoration: none;
+.nav-bar ul a {
     color: #121212;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     transition: color 0.3s ease;
 }
 
-
-.nav-item a:hover{
+.nav-bar  ul a:hover {
     color: #615EE4;
     text-decoration: underline;
 }
 
-.active a{
+.active a {
     color: #615EE4;
 }
 
-.nav-item {
+.nav-bar ul li {
+    padding: 0.5rem;
+    margin-left: 4rem;
+}
+
+.mobile-menu ul li {
+    padding: 0.5rem;
+    margin-left: 4rem;
+}
+
+
+.mobile-menu ul {
     list-style: none;
-    color: #615EE4;
-    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 36rem;
+}
+
+.mobile-menu ul a {
+    color: #121212;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 1.8rem;
+    text-decoration: none;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px;
     letter-spacing: 1.5px;
+    transition: color 0.3s ease;
 }
-.nav-link{
-    text-decoration: none;
-    color: #615EE4; 
+
+.mobile-menu ul a:hover {
+    color: #615EE4;
+    text-decoration: underline;
 }
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 10px);
+    transform: rotate(-45deg) translate(-7px, 10px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -10px);
+    transform: rotate(45deg) translate(-7px, -10px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 13rem;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.mobile-menu ul {
+    background-color: #615EE4;
+
+}
+
+.mobile-menu li {
+    margin-bottom: 3rem;
+}
+
 
 .nav-item_icon {
     display: flex;
-    width: 16px;
-    height: 16px;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
 }
+
+.search-box {
+    position: absolute;
+    right: 12rem;
+    height: 4.5rem;
+    max-width: 55.5rem;
+    width: 100%;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+
+
+}
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #615EE4;
+    outline: none;
+    background-color: #FCFCFC;
+    border-radius: 3rem;
+    padding: 0 2rem 0 5rem;
+
+
+     
+}
+/* Hero section */
 
 .box_left {
-    width: 30%;
+    width: 44%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-    margin-left: 6em;
-    margin-top: 130px;
-
+    padding: 3rem 0 0 0;
 }
 
-.hero_section .box_left h1 {
+.box_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 3rem 0 0 0;
+}
+
+.repair_man{
+    width: 100%;
+}
+
+.repair_man .img__repair__main{
+    width: 100%;
+    height: 100%;
+}
+
+.box_left h1 {
+    margin: 0;
     color: #615EE4;
     font-family: Playfair Display;
-    font-size: 84px;
+    font-size: 9rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 120%;
+    line-height: 110%;
     letter-spacing: 2.8px;
-    margin-top: 32px;
 }
 
-.hero_section .box_left p{
-    width: 115%;
+.hero_section .box_left p {
+    width: 91%;
     display: flex;
     color: #2D2F30;
     font-family: Plus Jakarta Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
+    font-size: 1.9rem;
+    font-weight: 400;
     line-height: 158%;
     letter-spacing: 0.5px;
 }
 
-.hero_section .box_left .parag01{
+.hero_section .box_left .parag01 {
     margin-top: 1px;
 }
 
-.hero_section .box_left .parag02{
+.hero_section .box_left .parag02 {
     margin-top: 100px;
     font-size: 17px;
 }
 
-.hero_section .box_left .button_contact{
+.hero_section .box_left .button_contact {
     margin-top: 20px;
-} 
+}
 
-.button_contact{
+.button_contact {
     width: 170px;
     height: 55px;
-    border-radius: 18px;
+    border-radius: 1.3rem;
     background: #615EE4;
     color: #F9F8F9;
     font-family: Plus Jakarta Sans;
@@ -150,6 +281,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     text-decoration: none;
     cursor: pointer;
     padding: 12px 12px 12px 28px;
+    transition: 0.5s ease;
 }
 
 .button_contact:hover {
@@ -178,40 +310,28 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     margin-top: 30px;
 }
 
-.box_right{
+
+.container__hero {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: end;
-    
+    justify-content: space-around;
 }
 
-.repair_man{
-    position: absolute;
-    top: 120px;
-}
-
-/* .img__repair__main {
-    width: 49.6875rem;
-    height: 54.23819rem;
-} */
-
-.box{
+.box {
+    margin-right: 2rem;
     width: 382px;
     height: 100px;
-    display: flex;
     flex-direction: column;
-    position: absolute;
     border-radius: 15px;
+    padding: 2rem;
     background: #ffffff;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    margin: -51px 200px;
-} 
-
-.hero_section{
-    height: 905px;
 }
-.box .box_name h2{
+
+.hero_section {
+    height: 80rem;
+}
+
+.box h2 {
     color: #33475B;
     text-align: center;
     font-family: Plus Jakarta Sans;
@@ -222,7 +342,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     margin-bottom: -5px;
 }
 
-.box .box_name p{
+.box p {
     color: #2D2F30;
     text-align: center;
     font-family: Plus Jakarta Sans;
@@ -230,20 +350,29 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
-    margin-bottom: 12px;
 }
+
 .box_name {
     padding: 12px 12px;
 }
+
+/* Footer */
+
 .info_section {
-    height: 400.157px;
+    width: 100%;
+    height: 33rem;
+    padding: 4rem 1rem;
     background: linear-gradient(270deg, #615EE4 1.59%, #2621E6 99.7%);
 }
+
+.size-mobile{
+    display: none;
+} 
 
 .info_section__container__container__logo {
     display: flex;
     justify-content: center;
-    margin-left: 90px;
+    margin-left: 9rem;
 }
 
 .icon {
@@ -258,12 +387,14 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     margin-top: 15px;
 
 }
+
 .info_section__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .footer__links {
     display: flex;
     justify-content: center;
@@ -278,23 +409,32 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     gap: 60px;
 }
 
-.element_product, .element_company, .element_support, .element_product_title, .element_support_title, .element_company_title {
+.element_product,
+.element_company,
+.element_support,
+.element_product_title,
+.element_support_title,
+.element_company_title {
     list-style: none;
     text-decoration: none;
 }
 
-.element_product_title, .element_support_title, .element_company_title {
+.element_product_title,
+.element_support_title,
+.element_company_title {
     color: #ffea00;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 30px;
 }
 
-.element_product, .element_company, .element_support{
+.element_product,
+.element_company,
+.element_support {
     color: #FFF;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -312,7 +452,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 .info_section {
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 350px;
@@ -328,9 +468,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.footer__bottom__copy p{
+.footer__bottom__copy p {
     color: #615EE4;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -339,7 +479,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 .footer__bottom {
     width: 100%;
-    height: 3.67981rem;
+    height: 6.67981rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,7 +489,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     margin-right: 120px;
 }
 
-.footer__links__product__list, .footer__links__company__list, .footer__links__support__list{
+.footer__links__product__list,
+.footer__links__company__list,
+.footer__links__support__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -362,7 +504,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     background: rgba(156, 154, 254, 0.10);
 }
 
-.section__service__title h1{
+.section__service__title h1 {
     color: #615EE4;
     font-family: Playfair Display;
     font-size: 60px;
@@ -379,7 +521,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     position: relative;
 }
 
-.service__box__left h2{
+.service__box__left h2 {
     width: 79%;
     color: #615EE4;
     font-family: Playfair Display;
@@ -391,9 +533,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.service__box__left p{
+.service__box__left p {
     width: 76%;
-    color:#4F4F4F;
+    color: #4F4F4F;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -402,7 +544,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.5px;
 }
 
-.service__box__left{
+.service__box__left {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -411,23 +553,24 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.service__box__right{
+.service__box__right {
     display: flex;
     flex-direction: column;
-    align-items:end;
+    align-items: end;
     justify-content: center;
 }
 
-.service__box__right__images{
+.service__box__right__images {
     width: 460px;
     height: 290px;
     display: flex;
     margin: 0 auto;
     filter: brightness(110%);
 }
+
 .service__box {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 70px;
     margin-top: 120px;
 }
@@ -440,7 +583,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.service__box01, .service__box02, .service__box03 {
+.service__box01,
+.service__box02,
+.service__box03 {
     display: flex;
     width: 256px;
     height: 312px;
@@ -458,22 +603,24 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 .service__box01:hover {
     transform: scale(1.1);
-    
+
 }
 
-.service__box02:hover{
+.service__box02:hover {
     transform: scale(1.1);
 }
 
-.service__box03:hover{
+.service__box03:hover {
     transform: scale(1.1);
 }
 
-.service__box01__icon, .service__box02__icon, .service__box03__icon {
+.service__box01__icon,
+.service__box02__icon,
+.service__box03__icon {
     margin-left: 72px;
 }
 
-.service__box01__info h3{
+.service__box01__info h3 {
     color: #615EE4;
     font-family: Playfair Display;
     font-size: 22px;
@@ -485,7 +632,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.service__box02__info h3{
+.service__box02__info h3 {
     color: #615EE4;
     font-family: Playfair Display;
     font-size: 22px;
@@ -496,7 +643,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     margin-top: -12px;
 }
 
-.service__box03__info h3{
+.service__box03__info h3 {
     color: #615EE4;
     font-family: Playfair Display;
     font-size: 22px;
@@ -507,7 +654,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     margin-top: -12px;
 }
 
-.service__box01__info p{
+.service__box01__info p {
     color: #4F4F4F;
     font-family: Plus Jakarta Sans;
     font-size: 14px;
@@ -517,7 +664,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.3px;
 }
 
-.service__box02__info p{
+.service__box02__info p {
     color: #4F4F4F;
     font-family: Plus Jakarta Sans;
     font-size: 14px;
@@ -527,7 +674,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.3px;
 }
 
-.service__box03__info p{
+.service__box03__info p {
     color: #4F4F4F;
     font-family: Plus Jakarta Sans;
     font-size: 14px;
@@ -537,7 +684,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.3px;
 }
 
-.service__box01__info, .service__box02__info, .service__box03__info {
+.service__box01__info,
+.service__box02__info,
+.service__box03__info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -547,7 +696,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 /* ------------About------------- */
 
 .about__section {
-    height: 900px;
+    height: fit-content;
     background: rgba(156, 154, 254, 0.10);
 }
 
@@ -556,7 +705,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     background: #615EE4;
 }
 
-.about__section__title h1{
+.about__section__title h1 {
     color: #615EE4;
     font-family: Playfair Display;
     font-size: 60px;
@@ -565,7 +714,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.5px;
-    padding: 100px 100px;
+    padding: 3rem 0 9rem;
     display: flex;
     justify-content: center;
     text-decoration: underline;
@@ -574,15 +723,16 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     position: relative;
 }
 
-.about__section__title p{
+.about__section__title p {
     width: 90%;
-    color:#4F4F4F;
+    color: #4F4F4F;
     font-family: Poppins;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0.5px;
+    text-align: center;
     margin-top: -80px;
     display: inline;
 }
@@ -593,6 +743,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     align-items: center;
     flex-direction: column;
 }
+
 .about__section__img {
     height: 500px;
     display: flex;
@@ -605,9 +756,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     display: flex;
 
 }
- 
-.some__counter h2{
-    color:#FFF;
+
+.some__counter h2 {
+    color: #FFF;
     text-align: center;
     font-family: Playfair Display;
     font-size: 48px;
@@ -617,14 +768,14 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.24px;
 }
 
-.some__counter p{
-    color:#FFF;
+.some__counter p {
+    color: #FFF;
     text-align: center;
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px; 
+    line-height: 32px;
     letter-spacing: 0.5px;
 }
 
@@ -633,7 +784,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 }
 
 .count__clients {
-    color:#FFF;
+    color: #FFF;
     text-align: center;
     font-family: Poppins;
     font-size: 48px;
@@ -642,17 +793,18 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     line-height: 64px;
 }
 
-.count__taken__business h3{
-    color:#FFF;
+.count__clients h3 {
+    color: #FFF;
     text-align: center;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 4.8rem;
     font-style: normal;
     font-weight: 800;
     line-height: 64px;
 }
-.count__years__of__journey h3{
-    color:#FFF;
+
+.count__taken__business h3 {
+    color: #FFF;
     text-align: center;
     font-family: Poppins;
     font-size: 48px;
@@ -661,7 +813,17 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     line-height: 64px;
 }
 
-.count__clients p{
+.count__years__of__journey h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+.count__clients p {
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -672,7 +834,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.054px;
 }
 
-.count__taken__business P{
+.count__taken__business P {
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -684,7 +846,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.count__years__of__journey p{
+.count__years__of__journey p {
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -694,12 +856,14 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     line-height: 32px;
     letter-spacing: 0.054px;
 }
+
 .counters {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
 }
+
 .counters {
     margin-top: 80px;
 }
@@ -748,14 +912,14 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 .description__user__one {
     width: 540px;
     height: 231.997px;
-    fill:#FFF;
+    fill: #FFF;
     box-shadow: rgba(58, 42, 150, 0.15) 0px 48px 100px 0px;
     border-radius: 20px;
     display: flex;
 }
 
-.description__user__one h1{
-    color:#151617;
+.description__user__one h1 {
+    color: #151617;
     text-align: center;
     font-family: Poppins;
     font-size: 18px;
@@ -765,7 +929,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.description__user__one p{
+.description__user__one p {
     color: #4F4F4F;
     text-align: center;
     font-family: Poppins;
@@ -783,7 +947,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     justify-content: center;
 }
 
-.profail__user__name__one h2{
+.profail__user__name__one h2 {
     color: #615EE4;
     font-family: Inter;
     font-size: 18px;
@@ -793,9 +957,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.profail__user__name__one p{
+.profail__user__name__one p {
     color: #4F4F4F;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -829,14 +993,14 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 .description__user__two {
     width: 540px;
     height: 231.997px;
-    fill:#FFF;
+    fill: #FFF;
     box-shadow: rgba(58, 42, 150, 0.15) 0px 48px 100px 0px;
     border-radius: 20px;
     display: flex;
 }
 
-.description__user__two h1{
-    color:#151617;
+.description__user__two h1 {
+    color: #151617;
     text-align: center;
     font-family: Poppins;
     font-size: 18px;
@@ -846,7 +1010,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.description__user__two p{
+.description__user__two p {
     color: #4F4F4F;
     text-align: center;
     font-family: Poppins;
@@ -864,7 +1028,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     justify-content: center;
 }
 
-.profail__user__two__name h2{
+.profail__user__two__name h2 {
     color: #615EE4;
     font-family: Inter;
     font-size: 18px;
@@ -874,9 +1038,9 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 
 }
 
-.profail__user__two__name p{
+.profail__user__two__name p {
     color: #4F4F4F;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -899,8 +1063,8 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 /* -----------Contact Section----------- */
 
 .contact__section {
-    height: 45.9375rem;
-    background-color: #9C9AFE1A;
+    height: fit-content;
+    padding: 1rem;
 }
 
 .contact__section__title {
@@ -911,7 +1075,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.5px;
-    padding: 150px 100px;
+    padding: 5rem 7rem 10rem 7rem;
     display: flex;
     justify-content: center;
     text-decoration: underline;
@@ -920,41 +1084,41 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     position: relative;
 }
 
-.contact__section__box01 h1{
-    color:#2D2F30;
+.contact__section__box01 h1 {
+    color: #2D2F30;
     font-family: Playfair Display;
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 4rem; 
+    line-height: 4rem;
     letter-spacing: 0.03125rem;
     margin-top: -20px;
 
 }
 
-.contact__section__box01 p{
+.contact__section__box01 p {
     color: #4F4F4F;
     font-family: Poppins;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.25rem; 
+    line-height: 2.7rem;
     letter-spacing: 0.03125rem;
     margin-top: -18px;
 }
 
 .googlemap {
-    width: 31rem;
-    height: 17rem;
+    width: 44rem;
+    height: 22rem;
     border-radius: 2.1875rem;
-    border: 5px solid #2621E6;
+    border: 0.4rem solid #2621E6;
 }
 
-.contact__section__box01{
+.contact__section__box01 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:start;
+    align-items: start;
 
 }
 
@@ -968,28 +1132,26 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 65px;
-
+    gap: 29.5rem;
 }
 
 .call__button {
     width: 170px;
-    height: 50px;
-    border-radius: 18px;
+    height: 55px;
+    border-radius: 1.3rem;
     border: #979797;
     background: #615EE4;
     color: #F9F8F9;
-    margin-top: 15px;
+    margin-top: 2.6rem;
     font-family: Plus Jakarta Sans;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
     line-height: 140.5%;
     letter-spacing: 1.36px;
     text-decoration: none;
     cursor: pointer;
-    padding: 12px 12px 12px 43px;
-
+    padding: 1.4rem 1.2rem 2.2rem 4.4rem;
 }
 
 .call__button:hover {
@@ -1000,8 +1162,8 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 }
 
 .contact__forms {
-    height: 29.375rem;
-    background: rgba(156, 154, 254, 0.10);
+    height: fit-content;
+    padding: 3rem;
 }
 
 .contact__forms__title {
@@ -1014,6 +1176,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.01219rem;
     display: flex;
 }
+
 .contact__forms__title h1 {
     font-size: 23px;
     margin: 0 auto;
@@ -1034,9 +1197,10 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     align-items: center;
 }
 
-.Your__name, .Your__email {
-    width: 26.0625rem;
-    height: 3.25rem;
+.Your__name,
+.Your__email {
+    width: 60%;
+    height: 5rem;
     border-radius: 0.8375rem;
     border: 2px solid #615EE4;
     background: #FFF;
@@ -1048,9 +1212,10 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
     letter-spacing: 0.125rem;
     padding: 20px;
 }
+
 .Your__subject {
-    width: 897px;
-    height: 3.25rem;
+    width: 60%;
+    height: 5rem;
     border-radius: 0.8375rem;
     border: 2px solid #615EE4;
     background: #FFF;
@@ -1064,8 +1229,8 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 }
 
 .Your__message {
-    width: 897px;
-    height: 11.25rem;
+    width: 60%;
+    height: 12rem;
     border-radius: 0.8375rem;
     border: 2px solid #615EE4;
     background: #FFF;
@@ -1105,7 +1270,7 @@ header.header, .contact__section, div.info_section, footer.footer, section.about
 }
 
 input.send__Your__message[value="Submit"] {
-    color:#F9F8F9;
+    color: #F9F8F9;
     font-family: Plus Jakarta Sans;
     font-size: 20px;
     font-style: normal;
@@ -1122,5 +1287,3 @@ input.send__Your__message[value="Submit"] {
     gap: 12px;
     margin-top: -5px;
 }
-
-
