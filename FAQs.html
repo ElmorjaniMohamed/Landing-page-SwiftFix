@@ -53,7 +53,7 @@
   </div>
     <nav class="nav-bar" >
       <ul id="nav-links">
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="services.html" >Services</a></li>
         <li class="dropdown">
           <button class="dropButton">
@@ -68,7 +68,7 @@
           </div>
         </li>
         <li><a href="contact.html" >Contact</a></li>
-        <li><a href="FAQs.html">FAQs</a></li>
+        <li><a class="active" href="FAQs.html">FAQs</a></li>
         <li class="nav-item_icon">
           <i class="uil uil-search search-icon" id="searchIcon"></i>
         </li>
@@ -112,46 +112,79 @@
   </header>
   <!-- header section -->
 
-  <!-- Home section -->
-  <section class="hero_section layout-padding">
-    <div id="container__hero" class="container__hero">
-      <div id="box_left" class="box_left">
-        <h1>
-          Repair and Maintenance Service
-        </h1>
-        <p class="parag01">
-          We are here to help you take care of your repair
-          and maintenance needs with the best service
-          tailored just for you.
-        </p>
-        <a class="button_contact" href="contact.html" aria-label="Contact Us">Contact Us</a>
-        <p class="parag02">
-          Top trusted companies in Morocco
-        </p>
-        <div class="logos">
-          <img src="images/logos.webp" alt="logos">
+  <section class="faq">
+    <h1 class="faq-title">FAQs</h1>
+    <div class="faq-question">
+        <div class="question">
+            <h2>
+                Combien de temps dure généralement une opération de maintenance ?
+            </h2>
+            <i class="ri-arrow-down-s-line"></i>
         </div>
-      </div>
+        <div class="answer">
+            <p>
+                La durée d'une opération de maintenance dépend de la nature de l'équipement et de la tâche à accomplir, mais elle peut varier de quelques heures à plusieurs jours.
+            </p>
+        </div>
+    </div>
 
-      <div class="box_right">
-        <div class="repair_man">
-          <img class="img__repair__main" src="images/Hero-Image.png" alt="repair_man" width="100" height="100">
+    <div class="faq-question">
+        <div class="question">
+            <h2>
+                Quels types d'équipements nécessitent une maintenance régulière ?
+            </h2>
+            <i class="ri-arrow-down-s-line"></i>
         </div>
-        <div class="box">
-          <h2>
-            Abdellah Benjelloun
-          </h2>
-          <p>
-            - Maintenance Expert -
-          </p>
+        <div class="answer">
+            <p>
+                La plupart des équipements industriels, machines, véhicules, systèmes de chauffage/ventilation/climatisation, etc., bénéficient de la maintenance régulière.
+            </p>
         </div>
-      </div>
+    </div>
+
+    <div class="faq-question">
+        <div class="question">
+            <h2>
+                Comment puis-je savoir si mon équipement a besoin de réparation ou de maintenance ?
+            </h2>
+            <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="answer">
+            <p>
+                Les signes courants incluent des bruits anormaux, des fuites, des vibrations excessives, des performances médiocres, ou des alarmes fréquentes.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-question">
+        <div class="question">
+            <h2>
+                Quels sont les coûts typiques associés à la maintenance préventive ?
+            </h2>
+            <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="answer">
+            <p>
+                Les coûts incluent la main-d'œuvre, les pièces de rechange, les outils, la formation, et peuvent varier en fonction de l'équipement.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-question">
+        <div class="question">
+            <h2>
+                Existe-t-il des conseils pour prolonger la durée de vie de mon équipement sans maintenance coûteuse ?
+            </h2>
+            <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="answer">
+            <p>
+                Oui, vous pouvez suivre les recommandations du fabricant, effectuer un entretien de base, surveiller les indicateurs de performance, et former votre personnel à une utilisation adéquate de l'équipement.
+            </p>
+        </div>
     </div>
 
   </section>
-  <!-- Home section -->
-
-
 
 
   <!-- footer section -->
@@ -286,7 +319,10 @@
     </div>
   </footer>
 
+  <!-- JavaScript -->
   <script src="js/index.js"></script>
+  <script src="js/FAQs.js"></script>
+  
 </body>
 
 </html>
