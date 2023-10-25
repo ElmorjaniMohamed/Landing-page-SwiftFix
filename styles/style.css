@@ -646,6 +646,21 @@ body {
     transition: 0.5s ease;
 }
 
+.service__box03 {
+    display: flex;
+    width: 29rem;
+    height: 35rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-radius: 3.4rem;
+    border: 4px solid #615EE4;
+    background: #FCFCFC;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: 0.5s ease;
+}
+
 .service__box01:hover {
     transform: scale(1.1);
 

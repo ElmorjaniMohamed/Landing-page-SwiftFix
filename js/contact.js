@@ -28,7 +28,7 @@ const setSuccess = element => {
 
     const inputSection = element.parentElement;
     const errorDisplay = inputSection.querySelector('.error');
-	console.log(errorDisplay)
+	// console.log(errorDisplay)
 
     errorDisplay.innerText = '';
     inputSection.classList.add('success');
@@ -54,13 +54,14 @@ const validateInputs = () =>{
 	const messageValue = message.value.trim();
 
 	// Username
-
+	console.log(textVerify(nameValue))
 	if(nameValue === '') {
 		setError(username, 'Username is required');
 	}
-	// else if (!textVerify(username)){
-	// 	setError(username, 'Provide a valid your username')
-	// }
+	else if (!textVerify(nameValue)){
+
+		setError(username, 'Provide a valid your username')
+	}
 	else {
 		setSuccess(username);
 	}
