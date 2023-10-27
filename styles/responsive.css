@@ -37,6 +37,11 @@
         margin-right: 0rem;
     }
 
+    .nav-bar.openSearch .search-box {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     #nav-links,
     .mobile-menu a {
         color: rgb(255, 255, 255);
@@ -57,6 +62,10 @@
 
     }
 
+    .mobile-menu li {
+        padding: 1rem;
+    }
+
     .hamburger ul {
         transition: all 0.5s;
     }
@@ -64,6 +73,17 @@
     .hamburger-icon:checked~ul {
         left: 0;
 
+    }
+
+    .ri-arrow-down-s-fill {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .dropdown .dropButton {
+        text-decoration: none;
+        background: transparent;
+        border: none;
     }
 
 

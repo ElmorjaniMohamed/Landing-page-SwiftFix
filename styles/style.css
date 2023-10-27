@@ -1407,6 +1407,7 @@ body {
 .contact-forms label {
     font-weight: 500;
     margin-bottom: 0.5rem;
+    color: #000000;
 }
 .contact-forms .error-message {
     margin-bottom: 0.1rem;
@@ -1463,7 +1464,7 @@ body {
     border-color: #ff3860;
 }
 
-.input-section .error {
+.input-section.error {
     color: #ff3860;
     font-size:1.2rem;
     font-family: Poppins;
@@ -1529,16 +1530,14 @@ body {
 .answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1.6s ease;
+    transition: max-height 0.8s ease;
     
 }
 
-.faq-question .openAnswer {
+.openAnswer {
     max-height: 30rem;
     
 }
 .openAnswer .ri-arrow-down-s-line {
     transform: rotate(180deg);
-    
-   
 }

@@ -1,5 +1,5 @@
 // Validation 
-// Name
+
 
 const form = document.querySelector('#forms-info');
 const username = document.querySelector('#your-name');
@@ -28,7 +28,7 @@ const setSuccess = element => {
 
     const inputSection = element.parentElement;
     const errorDisplay = inputSection.querySelector('.error');
-	// console.log(errorDisplay)
+
 
     errorDisplay.innerText = '';
     inputSection.classList.add('success');
@@ -37,7 +37,7 @@ const setSuccess = element => {
 
 // Text Verification
 const textVerify = (text) => {
-	const regex = /^[a-zA-Z ]{2,}$/;
+	const regex = /^\D{2,}$/;
 	return regex.test(text);
 };
 
@@ -54,7 +54,6 @@ const validateInputs = () =>{
 	const messageValue = message.value.trim();
 
 	// Username
-	console.log(textVerify(nameValue))
 	if(nameValue === '') {
 		setError(username, 'Username is required');
 	}
@@ -86,6 +85,7 @@ const validateInputs = () =>{
 	else {
 		setSuccess(subject);
 	}
+	
 
 	// Message
 
